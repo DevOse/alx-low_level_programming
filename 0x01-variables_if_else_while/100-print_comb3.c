@@ -17,11 +17,11 @@ int main(void)
 	{
 		for (unit = '0'; unit <= '9'; unit++)
 		{
-			if ((unit != tens) || (tens < unit))
+			if (!((unit == tens) || (tens > unit)))
 			{
 				putchar(tens);
 				putchar(unit);
-				if (unit < '9' && tens < '8')
+				if (!(unit == '9' && tens == '8'))
 				{
 					putchar(',');
 					putchar(' ');
