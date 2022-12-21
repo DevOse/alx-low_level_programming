@@ -10,6 +10,7 @@
 void puts_half(char *str)
 {
 	int n, x, y;
+
 	x = strlen(str);
 
 	/**
@@ -18,7 +19,6 @@ void puts_half(char *str)
 	 * if y = n and less than the string length:
 	 * print the string from the point where  y starts
 	 */
-	n = (x - 1) / 2;
 
 	if (x % 2 != 0)
 	{
