@@ -20,7 +20,7 @@ void puts_half(char *str)
 	 * print the string from the point where  y starts
 	 */
 
-	if (x % 2 = 1)
+	if (x % 2 == 1)
 	{
 		n = x / 2 + 1;
 	}
