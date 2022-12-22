@@ -18,5 +18,6 @@ void print_array(int *a, int n)
 		if (elements != (n - 1))
 			printf(", ");
 	}
+	printf("\n");
 
 }
