@@ -8,18 +8,26 @@
 
 int main(void)
 {
-	unsigned long int num = 612852475143, count;
+	unsigned long int num, maxPrime, oddPrime;
 
-	for (count = 3; num > 1; count ++)
+	num = 612852475143;
+	maxPrime = 0;
+	oddPrime = 3;
+
+	while (num % 2 == 0)
 	{
-		while (num % count == 0)
-		{
-			num = num / count;
-			if (num == count)
-			{
-				printf("%lu\n", count);
-			}
-		}
+		maxPrime = 2;
+		num = num / 2;
 	}
+	while (num != 1)
+	{
+		while (num % oddPrime == 0)
+		{
+			maxPrime = oddPrime;
+			num =  num / oddPrime;
+		}
+		oddPrime = oddPrime + 2;
+	}
+	printf("%lu\n", maxPrime);
 	return (0);
 }
