@@ -7,7 +7,7 @@
  * Return: 0
  */
 
-int main(void)
+int main(int argc, char *argv[])
 {
 	int bytes, a;
 	char *arr;
@@ -30,7 +30,7 @@ int main(void)
 	{
 		if (a == bytes - 1)
 		{
-			printf("&02hhx\n", arr[a]);
+			printf("%02hhx\n", arr[a]);
 			break;
 		}
 		printf("%02hhx", arr[a]);
