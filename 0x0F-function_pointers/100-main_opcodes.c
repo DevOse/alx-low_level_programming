@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * @argc: no of arguments
+ * main - entry point
+ *@argc: no of arguments
  * @argv: array
  * Return: 0
  */
@@ -24,7 +25,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	arr = (char*)main;
+	arr = (char *)main;
 
 	for (a = 0; a < bytes; a++)
 	{
