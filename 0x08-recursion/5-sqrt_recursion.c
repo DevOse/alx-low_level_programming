@@ -2,7 +2,6 @@
 
 /**
  * _sqrt_recursion - returns the natural square root of a number
- * rec: helps the _sqrt_recursion function to store two values in the argument
  * If n does not have a natural square root, return -1
  * @n: number
  * Return: sqaure root
@@ -14,10 +13,15 @@ int _sqrt_recursion(int n)
 
 	int sqrt = 1;
 
-	return rec(n, sqrt);
+	return (rec(n, sqrt));
 }
 
-
+/**
+ * rec - helps the _sqrt_recursion function to store two values in the argument
+ * @sqrt: squareroot
+ * @n: number
+ * Return: squaroot
+*/
 int rec(int n, int sqrt)
 {
 	if (sqrt * sqrt == n)
